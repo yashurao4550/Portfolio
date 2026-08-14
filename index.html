@@ -3,94 +3,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Yashu — BCA Cybersecurity student & aspiring security professional. Portfolio, skills and projects." />
   <title>Yashu | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <nav class="navbar">
+  <nav class="navbar" id="navbar">
     <div class="nav-logo">&lt;Yashu /&gt;</div>
     <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
+      <li><a href="#home" class="active">Home</a></li>
       <li><a href="#about">About</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#skills">Skills</a></li>
       <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
   </nav>
 
   <header id="home" class="hero">
+    <div class="hero-grid"></div>
     <div class="hero-content">
-      <p class="hero-greet">बेगनर्स · Cybersecurity Enthusiast</p>
-      <h1>Hi, I'm <span class="accent">Yashu</span></h1>
-      <p class="hero-sub">
-        BCA (Cybersecurity) student • Ducat coaching • Learning to protect the digital world.
+      <p class="hero-greet reveal">👋 heyy, welcome to my space</p>
+      <h1 class="reveal">I'm <span class="accent">Yashu</span></h1>
+      <p class="hero-typing reveal">&gt; <span id="typeText"></span><span class="cursor">|</span></p>
+      <p class="hero-sub reveal">
+        BCA Cybersecurity student · Ducat coaching · Learning to break (and protect) things — ethically.
       </p>
-      <div class="hero-buttons">
+      <div class="hero-buttons reveal">
         <a href="#projects" class="btn btn-primary">View Projects</a>
         <a href="#contact" class="btn btn-outline">Get in Touch</a>
+      </div>
+      <div class="hero-stats reveal">
+        <div class="stat"><strong id="statRepos">1</strong><span>Public Repos</span></div>
+        <div class="stat"><strong>100%</strong><span>Beginner Grind</span></div>
+        <div class="stat"><strong>∞</strong><span>Curiosity</span></div>
       </div>
     </div>
   </header>
 
-  <section id="about" class="section">
+  <section id="about" class="section" >
     <div class="container">
-      <h2 class="section-title">About Me</h2>
-      <p class="about-text">
-        I'm a fresher starting my BCA in Cybersecurity, currently taking hands-on coaching at
-        Ducat. I'm at the beginning of my journey — learning fundamentals, staying curious, and
-        building a strong foundation in protecting systems and networks. This portfolio is where
-        I'll document my growth.
-      </p>
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <h3>Who am I?</h3>
+          <p>
+            A fresher stepping into the world of <strong>Cybersecurity</strong> — currently pursuing my
+            <strong>BCA (Cybersecurity)</strong> while sharpening practical skills through
+            <strong>Ducat coaching</strong>. I believe security isn't a destination, it's a mindset —
+            and I'm building mine from the ground up.
+          </p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Current Mission</h3>
+          <ul class="mission-list">
+            <li>🎓 Start BCA — Cybersecurity track</li>
+            <li>🛡️ Learn networking &amp; security fundamentals</li>
+            <li>💻 Get comfortable with Linux &amp; scripting</li>
+            <li>🌍 Contribute to open source</li>
+            <li>📈 Build &amp; document projects regularly</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="skills" class="section section-alt">
+  <section id="education" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
+      <h2 class="section-title reveal">Education &amp; Training</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <p class="timeline-date">Ongoing</p>
+            <h3>BCA — Cybersecurity</h3>
+            <p>University education focusing on security fundamentals, networks and programming basics.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <p class="timeline-date">Ongoing</p>
+            <h3>Cybersecurity Coaching — Ducat</h3>
+            <p>Hands-on training in cybersecurity concepts, tools and practical labs.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <p class="timeline-date">2026</p>
+            <h3>Self-Learning Journey</h3>
+            <p>Version control (Git/GitHub), Linux basics, web technologies and open source workflows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title reveal">Skills</h2>
       <div class="skills-grid">
-        <div class="skill-card"><h3>Cybersecurity</h3><p>Fundamentals (learning)</p></div>
-        <div class="skill-card"><h3>Networking</h3><p>Basics (learning)</p></div>
-        <div class="skill-card"><h3>Linux</h3><p>Getting started</p></div>
-        <div class="skill-card"><h3>Web Basics</h3><p>HTML / CSS / JS</p></div>
+        <div class="skill-card reveal">
+          <h3>Cybersecurity</h3>
+          <div class="bar"><div class="bar-fill" style="width:20%"><span>20%</span></div></div>
+          <p>Fundamentals · in progress</p>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Networking</h3>
+          <div class="bar"><div class="bar-fill" style="width:20%"><span>20%</span></div></div>
+          <p>OSI model, basics · learning</p>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Linux</h3>
+          <div class="bar"><div class="bar-fill" style="width:15%"><span>15%</span></div></div>
+          <p>Commands, getting started</p>
+        </div>
+        <div class="skill-card reveal">
+          <h3>HTML / CSS / JS</h3>
+          <div class="bar"><div class="bar-fill" style="width:40%"><span>40%</span></div></div>
+          <p>Front-end basics</p>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Python</h3>
+          <div class="bar"><div class="bar-fill" style="width:10%"><span>10%</span></div></div>
+          <p>Basics · starting soon</p>
+        </div>
+        <div class="skill-card reveal">
+          <h3>Git &amp; GitHub</h3>
+          <div class="bar"><div class="bar-fill" style="width:35%"><span>35%</span></div></div>
+          <p>Version control basics</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="section">
+  <section id="projects" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <p class="muted">Work in progress — I'll add projects as I build them.</p>
+      <h2 class="section-title reveal">Projects</h2>
+      <p class="muted reveal">Every pro started at zero. These are my building blocks — more coming soon.</p>
       <div class="projects-grid">
-        <div class="project-card">
-          <h3>Sip &amp; Earn</h3>
-          <p>A food &amp; earning mini-project exploration.</p>
+        <div class="project-card reveal">
+          <div class="project-tags"><span class="tag">Web</span><span class="tag">HTML/CSS</span></div>
+          <h3>Portfolio Website</h3>
+          <p>This site — built from scratch, deployed free on GitHub Pages.</p>
+          <a href="https://github.com/yashurao4550/Portfolio" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
         </div>
-        <div class="project-card">
-          <h3>Mumbai Metro — subway.json</h3>
-          <p>Data experiment with transit data.</p>
+        <div class="project-card reveal">
+          <div class="project-tags"><span class="tag">Coming Soon</span></div>
+          <h3>Beginner Security Lab</h3>
+          <p>A documented lab environment for practicing network &amp; system security basics.</p>
         </div>
-        <div class="project-card">
-          <h3>My GitHub Projects</h3>
-          <p>More experiments coming soon.</p>
+        <div class="project-card reveal">
+          <div class="project-tags"><span class="tag">Coming Soon</span></div>
+          <h3>CTF Writeups</h3>
+          <p>Capture The Flag challenges — solutions and lessons learned.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="section section-alt">
+  <section id="contact" class="section">
     <div class="container">
-      <h2 class="section-title">Contact</h2>
-      <p class="about-text">Let's connect and learn together.</p>
-      <div class="contact-links">
-        <a href="https://github.com/yashurao4550" target="_blank" rel="noopener" class="btn btn-primary">GitHub</a>
-        <a href="mailto:your@email.com" class="btn btn-outline">Email Me</a>
+      <h2 class="section-title reveal">Let's Connect</h2>
+      <p class="about-text reveal">Open to learning, collaborations and opportunities in cybersecurity.</p>
+      <div class="contact-links reveal">
+        <a href="https://github.com/yashurao4550" target="_blank" rel="noopener" class="btn btn-primary">GitHub — yashurao4550</a>
+        <a href="mailto:yashurao4550@gmail.com" class="btn btn-outline">✉ Email Me</a>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <p>Built with &lt;3 · <a href="https://github.com/yashurao4550" target="_blank" rel="noopener">yashurao4550</a> · 2026</p>
+    <p id="footerText">Built with &lt;3 · yashurao4550 · 2026</p>
+    <p class="footer-note">"Security is a mindset, not a subject."</p>
   </footer>
+
+  <button id="backToTop" aria-label="Back to top">↑</button>
 
   <script src="script.js"></script>
 </body>
